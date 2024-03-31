@@ -19,12 +19,13 @@ classdef Contour
     end
 
     methods (Static)
-        function obj = Contour(frequency, tempres, length)
+        function obj = Contour(frequency, tempres, length, warpFunction)
             % Constructs a new contour object with a given array of
             % frequency values, temporal resolution, and length
             obj.frequency = frequency;
             obj.tempres  = tempres;
             obj.length = length;
+            obj.warpFunction = warpFunction;
         end
     end
 end
