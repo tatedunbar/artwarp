@@ -43,7 +43,7 @@ classdef ContourFactory
                 frequency = transpose(contents.freqContour);
                 tempres = contents.tempres;
                 ctrLen = size(frequency, 1);
-                contours = [contours, Contour(frequency, tempres, ctrLen 0)];
+                contours = [contours, Contour(frequency, tempres, ctrLen, 0)];
             end
         end
     end
